@@ -74,8 +74,9 @@ namespace ConsoleApplicationLabo1
                 }
             }
 
-            from activity in lstActivities
-            
+            var act = from activity in lstActivities where activity.Title == title select activity;
+
+
         }
 
         public override string ToString()
